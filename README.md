@@ -182,17 +182,17 @@ Used for monitoring backend performance, tracking errors, and debugging issues d
 ## 6.7 Design Rationale 
 The selection of cloud services was based on scalability, performance, and suitability for application requirements.
 
-Azure App Service was chosen to host both the frontend and backend because it supports dynamic server-side logic, environment variable configuration, and seamless deployment through GitHub integration. Compared to static hosting solutions, it provides greater flexibility for full-stack applications.
+Azure App Service was chosen to host both the frontend and backend because it supports dynamic server-side logic, environment variable configuration, and seamless deployment through GitHub integration. Compared with static hosting solutions, it offers greater flexibility for full-stack applications (Microsoft, n.d.).
 
-Azure Cosmos DB was selected as the primary NoSQL database due to its ability to handle unstructured and semi-structured data efficiently. Social media data, such as posts, comments, and chat messages, do not require a fixed schema, making Cosmos DB a suitable choice for scalability and performance.
+Azure Cosmos DB was selected as the primary NoSQL database due to its ability to handle unstructured and semi-structured data efficiently. Social media data, such as posts, comments, and chat messages, do not require a fixed schema, making Cosmos DB a suitable choice for scalability and performance. (Microsoft, 2025a)
 
-Azure SQL Database was used for authentication and structured user data. A relational database ensures data consistency and integrity, which is critical for managing user credentials and login information.
+Azure SQL Database was used for authentication and structured user data. A relational database ensures data consistency and integrity, which is critical for managing user credentials and login information. (Microsoft, 2025b)
 
-Azure Blob Storage was implemented for storing media files such as post images and profile pictures. It provides cost-effective and scalable storage optimized for large binary objects, improving performance when handling file uploads and retrieval.
+Azure Blob Storage was implemented for storing media files such as post images and profile pictures. It provides cost-effective and scalable storage optimized for large binary objects, improving performance when handling file uploads and retrieval. (Microsoft, 2022)
 
-Azure Web PubSub was selected to enable real-time communication. It allows bidirectional messaging between clients without requiring custom WebSocket infrastructure, making it efficient and easy to integrate for chat functionality.
+Azure Web PubSub was selected to enable real-time communication. It allows bidirectional messaging between clients without requiring custom WebSocket infrastructure, making it efficient and easy to integrate for chat functionality. (Microsoft, 2025)
 
-Azure Application Insights was used for monitoring and diagnostics. It provides real-time performance metrics, error tracking, and logging, which improve system reliability and simplify debugging during development.
+Azure Application Insights was used for monitoring and diagnostics. It provides real-time performance metrics, error tracking, and logging, which improve system reliability and simplify debugging during development. (Microsoft, 2026)
 
 ---
 
@@ -309,11 +309,12 @@ These repositories include all source code, configuration files, and documentati
 # 14. How to Use the Application
 
 Users can access the application through the deployed frontend URL.
-1.	Register a new account or log in using existing credentials
-2.	Create posts and upload images through the feed page
-3.	View and interact with other users’ profiles
-4.	Edit personal profile information, including profile image and bio
-5.	Use the chat page to communicate with other users in real time
+
+1. Register a new account or log in using existing credentials  
+2. Create posts and upload images through the feed page  
+3. View and interact with other users’ profiles  
+4. Edit personal profile information, including profile image and bio  
+5. Use the chat page to communicate with other users in real time  
 
 The application is designed with a simple navigation structure, allowing users to move between Home, Feed, Chat, and Profile pages efficiently.
 
@@ -337,5 +338,17 @@ React Documentation. (2024). https://react.dev
 Node.js Documentation. (2024). https://nodejs.org
 
 Algonquin College Library. (2024). *APA citation guide*. https://algonquincollege.libguides.com
+
+Microsoft. (n.d.). Azure App Service documentation - Azure App Service. Learn.microsoft.com. https://learn.microsoft.com/en-us/azure/app-service/
+
+‌Microsoft. (2025, December 19). Quickstart - Azure portal - Azure Cosmos DB. Microsoft.com. https://learn.microsoft.com/en-us/azure/cosmos-db/quickstart-portal
+
+‌Microsoft. (2025, June 17). What is the Azure SQL Database service? - Azure SQL Database. Microsoft.com. https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview?view=azuresql-db&preserve-view=true
+
+Microsoft. (2022, November 21). About Blob (object) storage - Azure Storage. Learn.microsoft.com. https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-overview
+
+‌Microsoft. (2025, May 28). What is Azure Web PubSub service? Microsoft Learn. https://learn.microsoft.com/en-us/azure/azure-web-pubsub/overview
+‌
+Microsoft. (2026, April 2). Azure Monitor Insights Overview - Azure Monitor. Microsoft Learn. https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/insights-overview
 
 ---
